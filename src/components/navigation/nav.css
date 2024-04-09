@@ -1,0 +1,28 @@
+.title-p{
+    font-weight: bold;
+    font-family:'Courier New', Courier, monospace;
+    color: rgba(0, 0, 0, 0.806);
+    padding: 4px;
+    border: 2px dashed;
+    border-radius: 5px;
+}
+
+.Nav-background{
+    background: linear-gradient(to   left ,rgb(30, 0, 255),white,red 90%);
+    background-size: 500% 500%;
+    animation: AnimateBG 7s ease infinite;
+}
+
+
+
+@keyframes AnimateBG {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+}

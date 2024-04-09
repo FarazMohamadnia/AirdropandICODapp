@@ -1,0 +1,130 @@
+.container-child1{
+    background:url('../../asset/icons8-rockstar-color/pixlr-image-generator-9906efa9-1868-4593-9f4d-db59ba4631ab.png');
+    background-color: rgba(0, 0, 0, 0.279);
+    background-blend-mode:color-burn;
+    background-size: cover ;
+    background-position:20%;
+    height: 100vh;
+    text-align: center;
+}
+
+.star-1{
+    --star-color:orange;
+    margin:1em auto;
+    font-size: 1rem;
+    position: relative;
+    display: inline-block;
+    width: 0px;
+    height: 0px;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid var(--star-color);
+    border-left: 1em solid transparent;
+    transform: rotate(35deg);
+    
+}
+
+.star-1:before {
+    border-bottom: 0.8em solid var(--star-color);
+    border-left: 0.3em solid transparent;
+    border-right: 0.3em solid transparent;
+    position: absolute;
+    height: 0;
+    width: 0;
+    top: -0.45em;
+    left: -0.65em;
+    display: block;
+    content:"";
+    transform: rotate(-35deg);
+}
+
+.star-1:after {
+    position: absolute;
+    display: block;
+    top: 0.03em;
+    left: -1.05em;
+    width: 0;
+    height: 0;
+    border-right: 1em solid transparent;
+    border-bottom: 0.7em solid var(--star-color);
+    border-left: 1em solid transparent;
+    transform: rotate(-70deg);
+    content:"";
+    
+}
+   
+
+.button-width{
+    width: 10rem;
+}
+
+.container-child2{
+    background-color: rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.container-child2 p{
+    background-color: white;
+    color: black;
+    margin: auto;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 15px;
+    width: 70%;
+    height: 10rem;
+    border-radius: 20px;
+    box-shadow: 0px 0px 20px 7px white;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    text-align:center;
+    overflow: scroll;
+}
+
+.container-child2 h1{
+    color: white;
+    margin-top: 15%;
+}
+
+
+.mySwiper1{
+    margin-top: 40px;
+    height: 35%;
+    width: 70%;
+    min-width: 140px;
+    max-width: 300px;
+    box-shadow: #ffffff;
+    margin-bottom: 45px;
+}
+
+.mySwiper1 img{
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+}
+
+.swiper-cube .swiper-cube-shadow{
+    background: white;
+}
+
+.swiper-cube .swiper-cube-shadow:before{
+    background: white;
+}
+
+
+
+
+.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet {
+    background-color: rgb(255, 0, 0);
+}
+
+
+@media only screen and (orientation:landscape){
+    .container-child2{
+        height: 50rem;
+    }
+    .container-child1{
+        height: 50rem;
+    }
+}
+
